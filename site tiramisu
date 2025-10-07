@@ -1,0 +1,343 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>La Touche Tiramisu</title>
+  <meta name="description" content="La Touche Tiramisu — créations artisanales de tiramisu à Villetaneuse.">
+  <link rel="icon" href="data:," />
+  <style>
+    *,*::before,*::after{box-sizing:border-box}
+    html,body{height:100%}
+    body{
+      margin:0;
+      font-family:"Poppins",Arial,sans-serif;
+      line-height:1.4;
+      color:#222;
+      background:linear-gradient(180deg,#fffaf0 0%, #fff 40%);
+    }
+
+    .container{
+      max-width:1100px;
+      margin:0 auto;
+      padding:24px;
+    }
+
+    header{
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:16px;
+      padding:10px 0;
+    }
+
+    .brand{
+      display:flex;
+      align-items:center;
+      gap:10px;
+      text-decoration:none;
+      color:inherit;
+    }
+    .logo{
+      width:56px;height:56px;border-radius:12px;
+      background:linear-gradient(135deg,#d69e7e,#f0c6a6);
+      display:grid;place-items:center;
+      font-weight:700;color:#fff;
+      box-shadow:0 4px 10px rgba(0,0,0,0.08);
+    }
+    nav a{
+      color:#4b2e20;
+      text-decoration:none;
+      margin-left:18px;
+      font-weight:600;
+    }
+    nav a.cta{
+      background:#4b2e20;
+      color:#fff;
+      padding:10px 14px;
+      border-radius:8px;
+    }
+
+    .hero{
+      display:grid;
+      grid-template-columns:1fr 420px;
+      gap:28px;
+      align-items:center;
+      margin-top:18px;
+    }
+    .hero-copy h1{
+      font-size:2.4rem;
+      margin-bottom:10px;
+      color:#3b2b23;
+    }
+    .hero-copy p{
+      color:#5a4a44;
+      margin-bottom:18px;
+    }
+    .buttons{display:flex;gap:12px;flex-wrap:wrap}
+    .btn{padding:12px 18px;border-radius:10px;border:0;cursor:pointer;font-weight:700}
+    .btn-primary{background:#8b5e3c;color:white}
+    .btn-ghost{background:transparent;border:2px solid #8b5e3c;color:#8b5e3c}
+
+    .hero-card{
+      background:rgba(255,255,255,0.9);
+      padding:16px;
+      border-radius:14px;
+      box-shadow:0 10px 30px rgba(60,40,30,0.08);
+      text-align:center;
+    }
+    .hero-card img{width:100%;height:260px;object-fit:cover;border-radius:10px;margin-bottom:10px}
+
+    section{margin-top:34px}
+    .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+    .card{background:#fff;padding:16px;border-radius:12px;box-shadow:0 6px 18px rgba(0,0,0,0.04)}
+    .card h4{margin:0 0 8px}
+    .card p{margin:0;color:#666}
+
+    footer{
+      margin-top:34px;
+      padding:18px 0;
+      border-top:1px dashed #eee;
+      display:flex;
+      justify-content:space-between;
+      flex-wrap:wrap;
+      color:#5a4a44;
+      font-size:0.95rem;
+    }
+
+    @media(max-width:980px){
+      .hero{grid-template-columns:1fr}
+      .grid{grid-template-columns:repeat(2,1fr)}
+    }
+    @media(max-width:600px){
+      .grid{grid-template-columns:1fr}
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <a class="brand" href="#">
+        <div class="logo">TT</div>
+        <div>
+          <div style="font-weight:800">La Touche<br><small style="font-weight:600;color:#8b5e3c">Tiramisu</small></div>
+        </div>
+      </a>
+      <nav>
+        <a href="#creations">Nos créations</a>
+        <a href="#recette">Recette</a>
+        <a class="cta" href="#commander">Commander</a>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <div class="hero-copy">
+        <h1>La Touche Tiramisu</h1>
+        <p>Découvrez des tiramisus faits maison à Villetaneuse, préparés chaque jour avec passion. Spéculos, Nutella, Café — un plaisir pour chaque gourmand !</p>
+        <div class="buttons">
+          <button class="btn btn-primary" onclick="document.getElementById('creations').scrollIntoView({behavior:'smooth'})">Voir nos créations</button>
+          <button class="btn btn-ghost" onclick="document.getElementById('recette').scrollIntoView({behavior:'smooth'})">Recette maison</button>
+        </div>
+      </div><!doctype html>
+      <html lang="fr">
+      <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <title>Notre équipe — La Touche Tiramisu</title>
+        <link rel="stylesheet" href="style.css">
+      </head>
+      <body>
+        <header>
+          <div class="logo">TT</div>
+          <h1>Notre Équipe</h1>
+          <nav>
+            <a href="index.html">Accueil</a>
+            <a href="commander.html">Commander</a>
+            <a href="employes.html" class="active">Équipe</a>
+          </nav>
+        </header>
+      
+        <section class="equipe">
+          <h2>Les visages derrière La Touche Tiramisu</h2>
+          <div class="grid">
+            <div class="card">
+              <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="Photo de Sarah Dupont">
+              <h3>Sarah Dupont</h3>
+              <p>Cheffe pâtissière — Spécialiste des tiramisus au Spéculos</p>
+            </div>
+            <div class="card">
+              <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Photo de Karim Benali">
+              <h3>Karim Benali</h3>
+              <p>Responsable atelier — Maître du tiramisu Nutella</p>
+            </div>
+            <div class="card">
+              <img src="https://randomuser.me/api/portraits/men/45.jpg" alt="Photo de Louis Martin">
+              <h3>Louis Martin</h3>
+              <p>Barista — Expert du tiramisu au Café</p>
+            </div>
+          </div>
+        </section>
+      
+        <footer>
+          © 2025 La Touche Tiramisu — Villetaneuse | 
+          <a href="index.html">Accueil</a> | 
+          <a href="commander.html">Commander</a>
+        </footer>
+      </body>
+      </html>="creations">
+      <h2>Nos créations</h2>
+      <div class="grid">
+        <article class="card">
+          <h4>Tiramisu Spéculos</h4>
+          <p>Crème onctueuse au mascarpone, biscuits Spéculos croquants et touche de caramel.</p>
+        </article>
+        <article class="card">
+          <h4>Tiramisu Nutella</h4>
+          <p>Une alliance parfaite entre le mascarpone et la pâte à tartiner préférée de tous.</p>
+        </article>
+        <article class="card">
+          <h4>Tiramisu Café</h4>
+          <p>Le classique italien, fort en goût et en caractère, pour les vrais amateurs de café.</p>
+        </article>
+      </div>
+    </section>
+    <img  
+        src="https://images.unsplash.com/photo-1625938145298-17601ce3c4b5?q=80&w=800&auto=format&fit=crop" 
+        alt="Photo d’un tiramisu crémeux avec poudre de cacao"
+        class="hero-img">
+    </section>
+
+
+    <section id="recette">
+      <h2>Notre recette maison</h2>
+      <p>Nos tiramisus sont préparés avec des ingrédients frais : mascarpone italien, œufs bio et biscuits artisanaux.  
+      Chaque création est un mélange d’amour, de gourmandise et de savoir-faire, pour offrir le meilleur du tiramisu à Villetaneuse.</p>
+    </section>
+
+    <section id="commander">
+      <h2>Où nous trouver</h2>
+      <div class="card">
+        <h4>La Touche Tiramisu - Villetaneuse</h4>
+        <p>📍 15 rue de la Douceur, 93430 Villetaneuse<br>
+        🕒 Ouvert du lundi au samedi — 10h à 19h30<br>
+        📞 06 00 00 00 00</p>
+      </div>
+    </section>
+
+    <footer>
+      <div>© 2025 <strong>La Touche Tiramisu</strong> — Villetaneuse</div>
+      <div>
+        <a href="#" style="text-decoration:none;color:inherit">Instagram</a> |
+        <a href="#" style="text-decoration:none;color:inherit">Contact</a>
+      </div>
+    </footer>
+  </div>
+</body>
+</html>
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Commander — La Touche Tiramisu</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="logo">TT</div>
+    <h1>Commander</h1>
+    <nav>
+      <a href="index.html">Accueil</a>
+      <a href="commander.html" class="active">Commander</a>
+      <a href="employes.html">Équipe</a>
+    </nav>
+  </header>
+
+  <section class="tarifs">
+    <h2>Nos tarifs</h2>
+    <table>
+      <tr><th>Produit</th><th>Portion individuelle</th><th>Grand format (6 pers)</th></tr>
+      <tr><td>Tiramisu Spéculos</td><td>4,50 €</td><td>22,00 €</td></tr>
+      <tr><td>Tiramisu Nutella</td><td>5,00 €</td><td>24,00 €</td></tr>
+      <tr><td>Tiramisu Café</td><td>4,00 €</td><td>20,00 €</td></tr>
+    </table>
+  </section>
+
+  <section class="formulaire">
+    <h2>Passer une commande</h2>
+    <form>
+      <label>Nom complet :</label>
+      <input type="text" required>
+
+      <label>Adresse e-mail :</label>
+      <input type="email" required>
+
+      <label>Choix du tiramisu :</label>
+      <select>
+        <option>Spéculos</option>
+        <option>Nutella</option>
+        <option>Café</option>
+      </select>
+
+      <label>Quantité :</label>
+      <input type="number" min="1" value="1" required>
+
+      <label>Message (facultatif) :</label>
+      <textarea rows="3"></textarea>
+
+      <button type="submit">Envoyer la commande</button>
+    </form>
+  </section>
+
+  <footer>
+    © 2025 La Touche Tiramisu — Villetaneuse | <a href="index.html">Accueil</a> | <a href="employes.html">Notre équipe</a>
+  </footer>
+</body>
+</html>
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Notre équipe — La Touche Tiramisu</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="logo">TT</div>
+    <h1>Notre Équipe</h1>
+    <nav>
+      <a href="index.html">Accueil</a>
+      <a href="commander.html">Commander</a>
+      <a href="employes.html" class="active">Équipe</a>
+    </nav>
+  </header>
+
+  <section class="equipe">
+    <h2>Les visages derrière La Touche Tiramisu</h2>
+    <div class="grid">
+      <div class="card">
+        <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="Photo de Sarah Dupont">
+        <h3>Sarah Dupont</h3>
+        <p>Cheffe pâtissière — Spécialiste des tiramisus au Spéculos</p>
+      </div>
+      <div class="card">
+        <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Photo de Karim Benali">
+        <h3>Karim Benali</h3>
+        <p>Responsable atelier — Maître du tiramisu Nutella</p>
+      </div>
+      <div class="card">
+        <img src="https://randomuser.me/api/portraits/men/45.jpg" alt="Photo de Louis Martin">
+        <h3>Louis Martin</h3>
+        <p>Barista — Expert du tiramisu au Café</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    © 2025 La Touche Tiramisu — Villetaneuse | 
+    <a href="index.html">Accueil</a> | 
+    <a href="commander.html">Commander</a>
+  </footer>
+</body>
+</html>
