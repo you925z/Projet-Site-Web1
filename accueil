@@ -1,1 +1,136 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>La Touche Tiramisu — Vente artisanale</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+<style>
+* {margin:0; padding:0; box-sizing:border-box;}
+body {
+font-family:'Poppins', sans-serif;
+background: url('https://www.google.com/imgres?q=photo%20tiramisu%2092i%204k&imgurl=https%3A%2F%2Ft3.ftcdn.net%2Fjpg%2F03%2F28%2F01%2F60%2F360_F_328016056_Ro67OjyMT2dnGFL6v4VKKoAkIcakElTW.jpg&imgrefurl=https%3A%2F%2Fstock.adobe.com%2Ffr%2Fsearch%3Fk%3Dtiramisu&docid=mzdf2-sJ5RHL9M&tbnid=eMW9kwfCKC7ruM&vet=12ahUKEwjgytyZrpKQAxXvd6QEHc6aAbAQM3oECBgQAA..i&w=539&h=360&hcb=2&ved=2ahUKEwjgytyZrpKQAxXvd6QEHc6aAbAQM3oECBgQAAs') no-repeat center center fixed;
+background-size:cover;
+color:white;
+backdrop-filter: brightness(0.6);
+}
+header {
+display:flex; justify-content:space-between; align-items:center;
+padding:20px 40px; background:rgba(0,0,0,0.4);
+}
+header h1 { font-size:28px; font-weight:600; letter-spacing:1px; color:#fff; }
+nav a {
+color:white; text-decoration:none; margin:0 12px;
+transition:0.3s; font-weight:500;
+}
+nav a:hover { color:#c5a26e; }
 
+.hero {
+text-align:center;
+padding:100px 20px;
+background:rgba(0,0,0,0.5);
+}
+.hero h2 {font-size:48px; font-weight:700; margin-bottom:20px;}
+.hero p {font-size:20px; margin-bottom:30px;}
+.btn {
+background:#c5a26e; color:#fff; padding:12px 30px;
+border:none; border-radius:6px; cursor:pointer;
+text-decoration:none; font-weight:600; transition:0.3s;
+}
+.btn:hover { background:#b18e54; }
+
+section {
+padding:80px 40px;
+background:rgba(0,0,0,0.6);
+text-align:center;
+}
+section h2 {font-size:36px; margin-bottom:40px;}
+
+.products {
+display:flex; flex-wrap:wrap; justify-content:center; gap:30px;
+}
+.card {
+background:rgba(255,255,255,0.1);
+border-radius:10px; overflow:hidden;
+width:280px; transition:0.3s;
+}
+.card:hover { transform:scale(1.03); }
+.card img {
+width:100%; height:200px; object-fit:cover;
+}
+.card h3 {
+margin:15px 0; font-size:22px;
+}
+.card p {font-size:16px; margin-bottom:10px;}
+.card .btn {margin-bottom:20px; display:inline-block;}
+
+footer {
+text-align:center; padding:30px;
+background:rgba(0,0,0,0.7);
+font-size:14px; color:#ddd;
+}
+footer a {
+color:#c5a26e; text-decoration:none;
+margin:0 10px;
+}
+footer a:hover {text-decoration:underline;}
+</style>
+</head>
+
+<body>
+<header>
+<h1>La Touche Tiramisu</h1>
+<nav>
+<a href="#produits">Produits</a>
+<a href="#contact">Contact</a>
+<a href="https://www.instagram.com/" target="_blank">Instagram</a>
+</nav>
+</header>
+
+<section class="hero">
+<h2>La Touche Tiramisu qui fait parler 🥇</h2>
+<p>Des recettes maison, fraîches et puissantes </p>
+<a href="#produits" class="btn">Découvrir nos saveurs</a>
+</section>
+
+<section id="produits">
+<h2>Nos Tiramisus</h2>
+<div class="products">
+<div class="card">
+<img src="https://images.unsplash.com/photo-1613470207927-0e96a8b8d78a?auto=format&fit=crop&w=800&q=80" alt="Tiramisu Classique">
+<h3>Tiramisu Classique</h3>
+<p>Café italien, mascarpone onctueux, cacao pur.</p>
+<a href="https://shopify.com" class="btn" target="_blank">Commander</a>
+</div>
+<div class="card">
+<img src="https://images.unsplash.com/photo-1602777807962-1908cf9e8b68?auto=format&fit=crop&w=800&q=80" alt="Tiramisu Nutella">
+<h3>Tiramisu Nutella</h3>
+<p>La fusion du mascarpone et du Nutella fondant 🍫</p>
+<a href="https://shopify.com" class="btn" target="_blank">Commander</a>
+</div>
+<div class="card">
+<img src="https://images.unsplash.com/photo-1634007652251-3de9c967f95f?auto=format&fit=crop&w=800&q=80" alt="Tiramisu Speculoos">
+<h3>Tiramisu Spéculoos</h3>
+<p>Crunch, crème, et douceur caramélisée 🔥</p>
+<a href="https://shopify.com" class="btn" target="_blank">Commander</a>
+</div>
+</div>
+</section>
+
+<section id="contact">
+<h2>Nous contacter</h2>
+<p>📍 Basé dans le 92 — livraison locale et retrait sur place.</p>
+<p>📞 <a href="tel:+33 7 52 81 35 49" style="color:#c5a26e;">07 00 00 00 00</a></p>
+<p>📧 <a href="mailto:LaToucheTiramisu@gmail.com" style="color:#c5a26e;">LaToucheTiramisu@gmail.com</a></p>
+</section>
+
+<footer>
+<p>© 2025 La Touche Tiramisu — Tous droits réservés.</p>
+<p>Suivez-nous :
+<a href="https://www.instagram.com/" target="_blank">Instagram</a> •
+<a href="https://www.tiktok.com/" target="_blank">TikTok</a> •
+<a href="https://wa.me/33700000000" target="_blank">WhatsApp</a>
+</p>
+</footer>
+</body>
+</html>
